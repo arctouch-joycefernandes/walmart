@@ -30,7 +30,7 @@
   },
   "test_settings": {
     "default": {
-      "launch_url": "http://dev.walmart.com",
+      "launch_url": "http://127.0.0.1",
       "selenium_port": 4444,
       "selenium_host": "localhost",
       "silent": true,
@@ -139,6 +139,23 @@
       "selenium_port": 80,
       "selenium": {
         "start_process": false
+      }
+    },
+    "appiumandroidapp": {
+      "skip_testcases_on_fail": true,
+      "desiredCapabilities": {
+        "app": "./app/AUT.apk",
+        "appiumVersion": "1.7.2",
+        "platformName": "Android",
+        "platformVersion": "7.1.1",
+        "deviceName": "a71_API_25"
+      },
+      "selenium": {
+        "start_process": false
+      },
+      "appium": {
+        "start_process": true,
+        "fullReset": true
       }
     }
   }
